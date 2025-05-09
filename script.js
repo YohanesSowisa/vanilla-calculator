@@ -6,8 +6,6 @@ let output = ''
 
 function handleClick(btnValue) {
   if (btnValue === '=' && output !== '') {
-    // output = eval(output.replace('%', '/100'))
-    // result.innerHTML = eval(output.replace('%', '/100'))
     result.innerHTML = `=${eval(output.replace(/[%x]/g, e => {
       return e == '%' ? '/100' : '*'
     }))}`
