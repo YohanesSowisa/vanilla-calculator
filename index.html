@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Vanilla JS Calculator App</h2>
+    <div class="wrapper">
+      <div class="op-field">
+        <!-- <span class="op">45x24</span> -->
+        <input type="text" class="op" readonly></input>
+        <span class="res"></span>
+      </div>
+      <div class="buttons">
+        <div class="row row1">
+          <span class="symbols c" id="c">C</span>
+          <span class="symbols" id="del">DEL</span>
+          <span class="symbols" id="percent">%</span>
+          <span class="symbols" id="divide">/</span>
+        </div>
+        <div class="row row2">
+          <span id="7" value="7">7</span>
+          <span id="8" value="8">8</span>
+          <span id="9" value="9">9</span>
+          <span class="symbols" id="multiply">x</span>
+        </div>
+        <div class="row row3">
+          <span id="4" value ="4">4</span>
+          <span id="5" value="5">5</span>
+          <span id="6" value="6">6</span>
+          <span class="symbols" id="minus">-</span>
+        </div>
+        <div class="row row4">
+          <span id="1" value="1">1</span>
+          <span id="2" value="2">2</span>
+          <span id="3" value="3">3</span>
+          <span class="symbols" id="plus">+</span>
+        </div>
+        <div class="row row5">
+          <!-- <span id="plusminus">+/-</span> -->
+          <span id="00">00</span>
+          <span id="0" value="0">0</span>
+          <span id="dot">.</span>
+          <span class="symbols equal" id="equal">=</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
